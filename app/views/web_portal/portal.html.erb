@@ -1,0 +1,28 @@
+
+
+<div id="contenido" class="ui-tabs">
+       <ul>
+         <li><a href="#productos"><span>Productos</span></a></li>
+         <li><a href="#destacado"><span>Destacados</span></a></li>
+         <li><a href="#quiensomos"><span>Quienes Somos?</span></a></li>
+         <li><a href="#contacto"><span>Contacto</span></a></li>
+        </ul>
+
+<div id="productos" class="galleryview ui-tabs-hide"> 
+ <%= render :partial => "productos"%>    
+</div>
+
+<div id="destacado" class="ui-tabs-hide">
+ <%= render :partial => "destacado"%>    
+</div>
+
+<div id="quiensomos" class="ui-tabs-hide">
+ <%= render :partial => "empresa"%>    
+</div>
+
+<div id="contacto" class="ui-tabs-hide">
+ <%= render :partial => "contacto" %>    
+</div>
+
+
+</div> 

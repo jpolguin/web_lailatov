@@ -1,0 +1,21 @@
+
+<% form_tag url_for(:controller => 'web_portal', :action => 'sendmail'), :method => 'get' do  %>
+ <table width="100%">
+  <tr>
+        <td><label>Nombre:*</label></td>
+        <td><%= text_field_tag :nombre %></td>
+        <td><label>Apellido:*</label></td>
+        <td><%= text_field_tag :apellido %></td>
+ </tr>
+ <tr>
+        <td><label>Email:*</label></td>
+        <td><%= text_field_tag :email %></td>
+         <td><label>Mensaje:</label></td>
+        <td width="60%"><%= text_area_tag :mensaje, nil, :rows => 5, :cols => 25 %></td>
+ </tr>
+  
+<tr>
+      <td></td><td><%= submit_tag "Enviar" %></td>
+</tr>
+ </table>
+<% end %>
